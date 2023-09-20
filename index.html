@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE Call - A Web Calling App</title>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+    <link rel="shortcut icon" href="./assets/logo-28085944.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    
+  <script type="module" crossorigin src="./assets/index-4a191149.js"></script>
+  <link rel="stylesheet" href="./assets/index-2c8b6893.css">
+</head>
+
+<body>
+    <div class="flex justify-between w-screen h-screen bg-slate-800">
+        <div class="menue w-[30%] max-sm:w-full bg-slate-900 m-5 rounded-md flex flex-col p-2 items-center">
+            <div class="flex-row w-full h-full">
+                <div class="chat-hader p-2 mt-2 flex items-center justify-between"> <!--  chat-hader  -->
+                    <div class="text-3xl text-white ml-1 font-bold">Users</div>
+                    <span class="text-white justify-end flex cursor-pointer mr-3 ">
+                        <div class="space-x-4">
+                            <i class="fa-solid fa-plus hover:text-blue-500" title="Add User"></i>
+                            <i class="fa-solid fa-gear hover:text-blue-500" title="Manage"></i>
+                        </div>
+                    </span>
+                </div>
+                <div class="search m-2 flex items-center w-full justify-center" title="Search...">
+                    <!--  Search-User  -->
+                    <input type="text" placeholder="Search Users..."
+                        class="w-full h-8 rounded-md text-white text-sm hover:border-blue-500 bg-transparent border-2 p-1 border-white focus:outline-none ">
+                    <span class=""><i
+                            class="fa-solid fa-magnifying-glass text-white -translate-x-6 cursor-pointer hover:text-blue-500"></i></span>
+                </div>
+                <div id="show-users-m-1" class="show-users m-1 flex max-h-[80%] overflow-y-auto flex-col">
+                    <div class="user1 rounded-md flex items-center justify-start m-2 border-2 p-2 hover:border-blue-500"
+                        title="Test-${i}">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinm5gbtIsaxputwomCq_38bG9Rw23Vg6vCARUGLA&s"
+                            class="rounded-full w-10 h-10" title="Profile Photo" />
+                        <div class="ms-3 flex w-full h-full justify-between items-center">
+                            <p class="text-lg text-white font-semibold">Test-${i}</p>
+                            <span class="text-gray-300 text-center w-12 h-full text-xl bottom-0">
+                                <i class="fa-solid fa-phone-volume hover:text-blue-500 cursor-pointer"
+                                    title="Call.."></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="body w-[70%] max-sm:hidden bg-slate-900 m-5 rounded-lg">
+            <div class="h-full w-full flex flex-col">
+                <div
+                    class="head w-full  h-14 border-white border-2 rounded-t-lg text-white font-bold flex justify-center cursor-pointer items-center text-3xl">
+                    Test-0
+                </div>
+                <div class="body w-full  grow border-white border-2 flex justify-center items-center ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRinm5gbtIsaxputwomCq_38bG9Rw23Vg6vCARUGLA&s"
+                        class="w-40 h-40  cursor-pointer rounded-full border-4 border-white" title="Profile Photo" />
+                </div>
+                <div
+                    class="controles w-full  h-1/5 border-white border-2 rounded-b-lg flex flex-row justify-evenly items-center">
+                    <div class="addUser w-14 h-14  border-white cursor-pointer hover:border-blue-500 border-2 rounded-3xl justify-center flex items-center"
+                        title="Add User">
+                        <i class="fa-solid fa-user-plus hover:text-blue-500 text-white text-xl"></i>
+                    </div>
+                    <div class="volumeUp w-14 h-14  border-white cursor-pointer hover:border-blue-500 border-2 rounded-3xl justify-center flex items-center"
+                        title="Volume Up">
+                        <i class="fa-solid fa-volume-high hover:text-blue-500 text-white text-xl"></i>
+                    </div>
+                    <div class="muteAudio w-14 h-14  border-white cursor-pointer hover:border-blue-500 border-2 rounded-3xl justify-center flex items-center"
+                        title="Mute Audio">
+                        <i class="fa-solid fa-microphone-slash hover:text-blue-500 text-white text-xl"></i>
+                    </div>
+                    <div class="eddCall w-14 h-14  border-white cursor-pointer hover:border-blue-500 border-2 rounded-3xl justify-center flex items-center"
+                        title="End Call">
+                        <i class="fa-solid fa-phone-slash hover:text-blue-500 text-white text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
